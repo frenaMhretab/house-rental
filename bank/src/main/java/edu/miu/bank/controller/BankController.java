@@ -19,6 +19,7 @@ public class BankController {
 
     @PostMapping
     public Mono<String> pay(@RequestBody Bank bank){
+        //bank info add
         return bankService.pay(bank);
     }
 
